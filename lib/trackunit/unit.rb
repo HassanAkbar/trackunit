@@ -1,4 +1,6 @@
+require "trackunit/resource"
+
 module TrackUnit
-  class Unit < OpenStruct
+  class Unit < Resource
   end
 end
