@@ -1,7 +1,6 @@
 module TrackUnit
   class Resource < OpenStruct
     def self.serialize_response(response)
-      binding.pry
       raise TrackUnit::AuthorizationError if response.blank?
       raise TrackUnit::Error.new(response) unless response.code == 200
 
