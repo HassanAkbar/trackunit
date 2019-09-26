@@ -3,7 +3,9 @@ require "httparty"
 require "trackunit/version"
 require "trackunit/unit"
 require "trackunit/client"
+require "trackunit/resource"
 
-module Trackunit
-  # Your code goes here...
+module TrackUnit
+  class Error < StandardError; end
+  class AuthorizationError < Error; end
 end
