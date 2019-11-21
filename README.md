@@ -28,7 +28,7 @@ require 'trackunit'
 client = TrackUnit::Client.new(YOUR_TRACKUNIT_TOKEN)
 
 # Retrieve list of Units (note: all communication must be made through the client).
-units = trackunit_client.units
+units = client.units
 ```
 
 ## Development
