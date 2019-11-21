@@ -1,8 +1,7 @@
-# Trackunit
+## Introduction
+This library is designed to help ruby/rails based applications communicate with the publicly available API for Trackunit.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/trackunit`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+If you are unfamiliar with the Xero API, you should first read the documentation located at https://dev.trackunit.com/.
 
 ## Installation
 
@@ -20,9 +19,17 @@ Or install it yourself as:
 
     $ gem install trackunit
 
-## Usage
+## Basic Usage
+```ruby
+require 'rubygems'
+require 'trackunit'
 
-TODO: Write usage instructions here
+# Create client (used to communicate with the API).
+client = TrackUnit::Client.new(YOUR_TRACKUNIT_TOKEN)
+
+# Retrieve list of Units (note: all communication must be made through the client).
+units = trackunit_client.units
+```
 
 ## Development
 
