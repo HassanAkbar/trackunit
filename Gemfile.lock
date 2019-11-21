@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    trackunit (0.1.0)
+    trackunit (0.2.0)
 
 GEM
   remote: https://rubygems.org/
@@ -39,7 +39,7 @@ DEPENDENCIES
   pry (= 0.10.1)
   pry-rails (= 0.3.3)
   rake (~> 10.0)
-  rspec (~> 3.0)
+  rspec
   trackunit!
 
 BUNDLED WITH
