@@ -1,7 +1,7 @@
 ## Introduction
 This library is designed to help ruby/rails based applications communicate with the publicly available API for Trackunit.
 
-If you are unfamiliar with the Xero API, you should first read the documentation located at https://dev.trackunit.com/.
+If you are unfamiliar with the Trackunit API, you should first read the documentation located at https://dev.trackunit.com/.
 
 ## Installation
 
