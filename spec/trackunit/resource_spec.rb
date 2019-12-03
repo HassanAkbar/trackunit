@@ -1,6 +1,8 @@
+require "trackunit/resource"
+
 RSpec.describe TrackUnit::Resource do
-  let(:success_body_response) { File.open(File.expand_path("../../support/fixtures/units.json", __FILE__)).read }
-  before(:each) do
+  let(:success_body_response) { File.open(File.expand_path("../support/fixtures/units.json", __FILE__)).read } 
+    before(:each) do
     stub_request(:get, "https://api.trackunit.com/public/unit?token=ValidToken").
     with(
       headers: {
@@ -18,7 +20,9 @@ RSpec.describe TrackUnit::Resource do
   it "serializes response from API" do
     units = TrackUnit::Client.new("ValidToken").units
     binding.pry
-    serialized_response = Resource.serialize_response(success_body_response)
+    response = TrackUnit::Client.get('/unit')
+    serialized_response = subject.class.serialize_response(response)
+    binding.pry
     expect(units).to eq(serialized_response)
   end
 end
