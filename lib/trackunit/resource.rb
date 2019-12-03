@@ -1,8 +1,10 @@
 module TrackUnit
   class Resource < OpenStruct
     def self.serialize_response(response)
-      raise TrackUnit::AuthorizationError if response.blank?
-      raise TrackUnit::Error.new(response) unless response.code == 200
+      binding.pry
+      raise TrackUnit::Error if response.blank?
+      raise TrackUnit::AuthorizationError.new(response.message) if response.code == 401
+      raise TrackUnit::Error.new(response.message) unless response.code == 200
 
       serialized_data = []
       response.deep_transform_keys(&:underscore)['list'].each do |unit|
