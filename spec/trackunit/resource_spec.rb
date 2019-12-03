@@ -19,10 +19,8 @@ RSpec.describe TrackUnit::Resource do
 
   it "serializes response from API" do
     units = TrackUnit::Client.new("ValidToken").units
-    binding.pry
     response = TrackUnit::Client.get('/unit')
     serialized_response = subject.class.serialize_response(response)
-    binding.pry
     expect(units).to eq(serialized_response)
   end
 end
