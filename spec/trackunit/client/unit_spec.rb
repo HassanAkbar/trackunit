@@ -15,11 +15,6 @@ RSpec.describe TrackUnit::Client::Units do
       client = TrackUnit::Client.new("InvalidToken")
       expect { client.units }.to raise_error(TrackUnit::AuthorizationError)
     end
-
-    it "throws an error for a wrong Trackunit account" do
-      client = TrackUnit::Client.new("InvalidToken")
-      expect { client.units }.to raise_error(TrackUnit::AuthorizationError)
-    end
   end
 
   context "generates a successful response when Units are fetched" do
