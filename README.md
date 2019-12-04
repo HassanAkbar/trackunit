@@ -1,11 +1,11 @@
 ## TrackUnit Ruby
 
+[![Build Status](https://travis-ci.com/HassanAkbar/trackunit.svg?branch=master)](https://travis-ci.com/HassanAkbar/trackunit)
+
 This library is designed to help ruby/rails based applications communicate with the publicly available REST API for Trackunit.
 
 
 If you are unfamiliar with the Trackunit REST API, you should first read the documentation located at https://dev.trackunit.com/.
-
-[![Build Status](https://travis-ci.com/HassanAkbar/trackunit.svg?branch=master)](https://travis-ci.com/HassanAkbar/trackunit)
 
 
 ## Installation
