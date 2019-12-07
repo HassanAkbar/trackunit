@@ -1,7 +1,7 @@
 require "trackunit/resource"
 
 RSpec.describe TrackUnit::Resource do
-  let(:success_body_response) { File.open(File.expand_path("../support/fixtures/units.json", __FILE__)).read } 
+  let(:success_body_response) { File.open(File.expand_path("../support/fixtures/units.json", __FILE__)).read }
     before(:each) do
     stub_request(:get, "https://api.trackunit.com/public/unit?token=ValidToken").
     with(
