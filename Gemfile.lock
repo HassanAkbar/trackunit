@@ -53,10 +53,10 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.0)
-    simplecov (0.18.5)
+    simplecov (0.19.1)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
-    simplecov-html (0.12.1)
+    simplecov-html (0.12.3)
     thread_safe (0.3.6)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
@@ -75,7 +75,7 @@ DEPENDENCIES
   pry-rails (= 0.3.9)
   rake (~> 13.0)
   rspec (~> 3.0)
-  simplecov (= 0.18.5)
+  simplecov (= 0.19.1)
   trackunit!
   webmock (= 3.9.4)
 
