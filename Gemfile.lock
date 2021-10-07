@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    trackunit (0.2.0)
+    trackunit (0.3.0)
       activesupport (~> 6.0)
       httparty (~> 0.17.1)
 
