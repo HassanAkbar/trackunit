@@ -52,8 +52,8 @@ GEM
       pry (>= 0.10.4)
     public_suffix (5.0.4)
     rake (13.2.1)
-    rexml (3.2.8)
-      strscan (>= 3.0.9)
+    rexml (3.3.3)
+      strscan
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
