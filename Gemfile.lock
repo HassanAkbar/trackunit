@@ -3,7 +3,7 @@ PATH
   specs:
     trackunit (0.3.0)
       activesupport (>= 6, < 8)
-      httparty (>= 0.17.1, < 0.21.0)
+      httparty (>= 0.17.1, < 0.24.0)
 
 GEM
   remote: https://rubygems.org/
@@ -33,15 +33,13 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     hashdiff (1.1.1)
-    httparty (0.20.0)
-      mime-types (~> 3.0)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     method_source (1.1.0)
-    mime-types (3.3.1)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.0901)
+    mini_mime (1.1.5)
     minitest (5.21.1)
     multi_xml (0.6.0)
     mutex_m (0.2.0)
